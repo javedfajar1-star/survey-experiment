@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Landing Page</title>
+
+  <script>
+    /*
+      Random assignment to ONE of TWO Google Forms
+      Condition 1 = Native accent
+      Condition 2 = Foreign accent
+    */
+
+    const forms = [
+      "https://forms.gle/vnNA6abfTwdqM8YA6",  // Native accent
+      "https://forms.gle/FmaoRHKLpZG5oKDn9"   // Foreign accent
+    ];
+
+    const randomIndex = Math.floor(Math.random() * forms.length);
+    window.location.href = forms[randomIndex];
+  </script>
+</head>
+
+<body>
+  <p>Redirecting you to the survey…</p>
+</body>
+</html>
